@@ -1,0 +1,330 @@
+/* ========== universal property ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto-regular";
+    color: var(--primary-text-color);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ========== column property ========== */
+.col-1 {
+    width: 8.33333%
+}
+
+.col-2 {
+    width: 16.6667%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.3333%
+}
+
+.col-5 {
+    width: 41.6667%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.3333%
+}
+
+.col-8 {
+    width: 66.6667%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.3333%
+}
+
+.col-11 {
+    width: 91.6667%
+}
+
+.col-12 {
+    width: 100%
+}
+
+
+/* ========== globle varibles ========== */
+:root {
+    --primary-text-color: #182b56;
+    --secondary-text-color: #577592;
+    --accent-color: #ed22cb;
+    --accent-color-dark: #1d69a3;
+}
+
+
+/* ========== utility classes ========== */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'UbuntuMono-Regular';
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.hover-link-active {
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link-active:hover {
+    color: var(--accent-color);
+}
+
+.primary-butn {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-butn:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-butn {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-butn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* ====== container ======= */
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto;
+}
+
+
+/* ========== top banner section ========== */
+.top-banner {
+    background: var(--accent-color);
+    background-image: url('../images/top-banner.png');
+    background-size: 300px;
+}
+
+.top-banner .banner-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-banner .banner-text a {
+    display: block;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+.top-banner span{
+    margin-left: 10px;
+    font-size: 12px !important;
+}
+
+/* ========== nav logo-link section ========== */
+
+.main-nav {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand img {
+    width: 200px;
+}
+.navbar .search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .search-icon a:first-child{
+    padding-right: 20px !important;
+}
+.navbar .search-icon a:last-child{
+    width: 150px !important;
+}
+
+.main-nav .company-badge {
+    background-image: url(../images/asset\ 33.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 151px 33px;
+    padding: 8px 16px;
+}
+
+.main-nav .company-badge .becomeTester-text {
+    color: #183b56;
+    text-align: center;
+    text-transform: none;
+    margin-left: 6px;
+    font-size: 16px;
+    display: block;
+}
+
+.main-nav .heading-info {
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+/* ========== main header section ========== */
+header {
+    padding: 0;
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-section .header-left {
+    max-width: 40vw;
+}
+
+.header-section .header-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.header-section .header-left .get-started-btn {
+    margin-top: 32px;
+}
+
+.header-section .header-right img {
+    max-width: 100%;
+}
+
+
+/* ========== companies section ========== */
+.companies-section {
+    padding: 40px 20px;
+}
+
+.companies-section .container {
+    margin-top: 50px;
+}
+
+.companies-section .companies-header {
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.companies-section .logos {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.companies-section .logos .logo {
+    height: 46px;
+}
+
+.companies-section form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.companies-section form button {
+    margin: 0 auto;
+
+}
+
+
+/* ========== images section ========== */
+.srch-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.secondary-butn{
+    padding: 0 !important;
+    width: 50%;
+    background-color: transparent !important;
+    border: none;
+}
+.secondary-butn input{
+    padding: 15px;
+    border-radius: 50px !important;
+}
+.secondary-butn input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.box{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.05),-5px -5px 20px rgba(0,0,0,0.05);
+}
+.box img{
+    width: 70%;
+    height: 130px;
+}
